@@ -15,7 +15,9 @@
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
     "start": "webpack serve --hot --mode development",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -30,6 +32,14 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@hot-loader/react-dom": "^17.0.1+4.13.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.2.9",
+    "@types/storybook__addon-info": "^5.2.3",
+    "add": "^2.0.6",
     "autoprefixer": "^10.2.5",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
@@ -59,12 +69,14 @@
     "precss": "^4.0.0",
     "prettier": "^2.3.0",
     "rimraf": "^3.0.2",
-    "sass-loader": "^11.1.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.37.0",
     "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "yarn": "^1.22.10"
   }
 }
